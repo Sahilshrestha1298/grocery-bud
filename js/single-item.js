@@ -9,7 +9,7 @@ export function createSingleItem(item) {
     </p>
     <button class="btn icon-btn edit-btn" type="button">
       <i class="fa-regular fa-pen-to-square"></i>
-    
+    </button>
     <button class="btn icon-btn remove-btn" type="button">
       <i class="fa-regular fa-trash-can"></i>
     </button>
