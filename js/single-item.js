@@ -1,3 +1,12 @@
+import { editCompleted } from "./app.js";
+
+function createSingleItem(item) {
+  const checkbox = querySelector('input[type="checkbox"]');
+  checkbox.addEventListener("change", () => editCompleted(item.id));
+
+  return div;
+}
+
 export function createSingleItem(item) {
   const div = document.createElement("div");
   div.className = "single-item";
