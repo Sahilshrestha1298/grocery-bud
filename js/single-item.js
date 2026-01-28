@@ -1,21 +1,5 @@
 import { editCompleted } from "./app.js";
 
-function createSingleItem(item) {
-  const checkbox = div.querySelector('input[type="checkbox"]');
-  checkbox.addEventListener("change", () => editCompleted(item.id));
-
-  return div;
-}
-
-import { editCompleted, removeItem } from "./app.js";
-
-function createSingleItem(item) {
-  const removeBtn = div.querySelector(".remove-btn");
-  removeBtn.addEventListener("click", () => removeItem(item.id));
-
-  return div;
-}
-
 export function createSingleItem(item) {
   const div = document.createElement("div");
   div.className = "single-item";
@@ -32,6 +16,11 @@ export function createSingleItem(item) {
       <i class="fa-regular fa-trash-can"></i>
     </button>
   `;
+
+  const checkbox = div.querySelector('input[type="checkbox"]');
+  checkbox.addEventListener("change", () => {
+    editCompleted(item.id);
+  });
 
   return div;
 }
