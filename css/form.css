@@ -19,6 +19,10 @@ form h2 {
   border: 1px solid #ddd;
 }
 
+.form-input::placeholder {
+  color: #aaa;
+}
+
 .form-control .btn {
   cursor: pointer;
   color: #fff;
