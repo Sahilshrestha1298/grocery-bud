@@ -7,6 +7,15 @@ function createSingleItem(item) {
   return div;
 }
 
+import { editCompleted, removeItem } from "./app.js";
+
+function createSingleItem(item) {
+  const removeBtn = div.querySelector(".remove-btn");
+  removeBtn.addEventListener("click", () => removeItem(item.id));
+
+  return div;
+}
+
 export function createSingleItem(item) {
   const div = document.createElement("div");
   div.className = "single-item";
