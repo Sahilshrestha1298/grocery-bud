@@ -20,7 +20,7 @@ export function createForm() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    const input = form.querySelector(".form-input");
     const value = input.value.trim();
 
     if (!value) {
