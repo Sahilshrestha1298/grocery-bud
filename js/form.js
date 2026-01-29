@@ -62,6 +62,11 @@ export function createForm(editId, itemToEdit) {
     const input = form.querySelector(".form-input");
     const value = input.value.trim();
 
+    if (!value) {
+      alert("please provide value", "error");
+      return;
+    }
+
     // added conditions
     if (editId) {
       updateItemName(value);
