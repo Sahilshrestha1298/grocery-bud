@@ -32,3 +32,14 @@ export function createSingleItem(item) {
 
   return div;
 }
+
+import { editCompleted, removeItem, setEditId } from "./app.js";
+
+// Create SingleItem Element
+export function createSingleItem(item) {
+  // ....
+
+  // Add event listener for edit button
+  const editBtn = div.querySelector(".edit-btn");
+  editBtn.addEventListener("click", () => setEditId(item.id));
+}
